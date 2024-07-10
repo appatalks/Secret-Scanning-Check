@@ -7,7 +7,7 @@ This GitHub Action checks for unresolved secret scanning alerts when a pull requ
 
 > Q: What does this solve for, don't we already have secret scanning push protection?
 > 
-> A: If a secret has been previously flag, Maintainers may ignore a secret scanning alert and _forget_ to resolve it. Others may be unaware and you **must** assume the secret is already comprimised.
+> A: If a secret has been previously flaged, Maintainers may ignore a secret scanning alert and _forget_ to resolve it. Others may be unaware and you **must** assume the secret is already comprimised.
 
 #### Usage
 
