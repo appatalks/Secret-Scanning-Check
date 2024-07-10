@@ -1,5 +1,7 @@
-### Secret-Scanning-Check
-GitHub Actions Check - Secret Scanning; An added layer of visibility.
+#### GitHub Actions Check - Secret Scanning; <br> An added layer of visibility.
+
+> [!TIP]
+> Require [status checks](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#require-status-checks-to-pass-before-merging) to pass before merging
 
 This GitHub Action checks for unresolved secret scanning alerts when a pull request is opened or reopened. If any unresolved alerts are found, the action will fail and report an error.
 
