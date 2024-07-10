@@ -13,11 +13,7 @@ This GitHub Action checks for unresolved secret scanning alerts when a pull requ
 
 1. **Create a Secret**: Add a secret named `APP_TOKEN` in your GitHub repository settings with your GitHub token. <br> OAuth app tokens and personal access tokens (classic) need the ```repo``` scope or ```security_events``` scope to use this [endpoint](https://docs.github.com/en/enterprise-cloud@latest/rest/secret-scanning/secret-scanning?apiVersion=2022-11-28#list-secret-scanning-alerts-for-an-enterprise).
 
-2. **Create Workflow**: Add the workflow [YAML file](secret-scanning-check.yml) to your repository at `.github/workflows/secret-scanning-check.yml`.
-
-## Example Workflow File
-
-Refer to the [`.github/workflows/secret-scanning-check.yml`](.github/workflows/secret-scanning-check.yml) file in your repository.
+2. **Create Workflow**: Add the workflow [YAML file](secret-scanning-check.yml) to your repository at ```.github/workflows/secret-scanning-check.yml```.
 
 ## Notes
 
