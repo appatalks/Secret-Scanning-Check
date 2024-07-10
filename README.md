@@ -11,12 +11,15 @@ This GitHub Action checks for unresolved secret scanning alerts when a pull requ
 
 #### Usage
 
-1. **Create a Secret**: Add a secret named `APP_TOKEN` in your GitHub repository settings with your GitHub token. <br> OAuth app tokens and personal access tokens (classic) need the ```repo``` scope or ```security_events``` scope to use this [endpoint](https://docs.github.com/en/enterprise-cloud@latest/rest/secret-scanning/secret-scanning?apiVersion=2022-11-28#list-secret-scanning-alerts-for-an-enterprise).
+1. **Create a Secret**
+   - Add a secret named `APP_TOKEN` in your GitHub repository settings with your GitHub token. <br>
+   - OAuth app tokens and personal access tokens (classic) need the ```repo``` scope or ```security_events``` scope to use this [endpoint](https://docs.github.com/en/enterprise-cloud@latest/rest/secret-scanning/secret-scanning?apiVersion=2022-11-28#list-secret-scanning-alerts-for-an-enterprise).
 
-2. **Create Workflow**: Add the workflow [YAML file](secret-scanning-check.yml) to your repository at ```.github/workflows/secret-scanning-check.yml```.
+3. **Create Workflow**
+   - Add the workflow [YAML file](secret-scanning-check.yml) to your repository at ```.github/workflows/secret-scanning-check.yml```.
 
 ## Notes
 
-- Ensure your `APP_TOKEN` has the necessary permissions to access secret scanning alerts.
+- Ensure your `APP_TOKEN` has the necessary permissions to access secret scanning alerts. ```security_events``` recommended.
 - This action uses `jq` to process JSON data from the GitHub API.
 - I love this check so much, I wanted to create a dedicated repository for it and recommend everyone use it.
