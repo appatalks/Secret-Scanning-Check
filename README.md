@@ -3,7 +3,11 @@
 > [!TIP]
 > Require [status checks](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#require-status-checks-to-pass-before-merging) to pass before merging
 
-This GitHub Action checks for unresolved secret scanning alerts when a pull request is opened or reopened. If any unresolved alerts are found, the action will fail and report an error.
+This GitHub Action checks for unresolved secret scanning alerts when a pull request is opened or reopened. If any unresolved alerts are found, the action will fail and report an error. 
+
+> Q: What does this solve for, don't we already have secret scanning push protection?
+> 
+> A: If a secret has been previously flag, Maintainers may ignore a secret scanning alert and _forget_ to resolve it. Others may be unaware and you **must** assume the secret is already comprimised.
 
 #### Usage
 
